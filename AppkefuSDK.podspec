@@ -22,4 +22,6 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "AppKeFuLib/libAppKeFuIMSDK.a"
   s.resources = "AppKeFuLib/AppKeFuResources.bundle"
   s.xcconfig =  { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/AppKeFuLib/**"' }
+  s.frameworks = 'SystemConfiguration', 'CoreLocation', 'CoreData', 'AVFundation', 'AudioToolbox', 'ImageIO', 'MapKit'
+
 end
